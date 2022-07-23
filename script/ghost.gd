@@ -15,7 +15,7 @@ func _ready():
 func _physics_process(delta) -> void:
 
 	if side == 1:
-		motion.x = speed*delta
+		motion.x = speed * delta
 		#$sprite.flip_h = false
 	elif side == 2:
 		motion.x = -speed * delta
@@ -25,7 +25,7 @@ func _physics_process(delta) -> void:
 	elif side == 4:
 		motion.y = -speed * delta
 	elif aleatorio == false:
-		timer += 1*delta
+		timer += 1 * delta
 		if timer > 6:
 			aleatorio = true
 			timer = 0
